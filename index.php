@@ -1,3 +1,5 @@
-<script>
-    window.location = "thinkce_manager/public/index.php";
-</script>
+<?php
+require_once "pjango/app/init.php";
+
+$app = new App;
+

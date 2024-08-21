@@ -1,26 +1,16 @@
 <?php
-class Views extends Controller {
-    public function index(){
+class Views extends Template {
+    public function index($request){
         echo "Yes ThinkCE The Genius";
     }
-
     public function about($request){
-
-        $model = $this->model("main", "Bookmark");
-        if($request == "POST"){
-            $url = Input::get("url");
-            $name = Input::get("name");
-            $user_id = Input::get("user_id");
-            $data = [
-                $model->url => $url,
-                $model->user_id => $user_id,
-                $model->name => $name,
-            ];
-            $model->save($data);
-            echo "Okkkk";
-        }
-        $var = explode("/", Input::get("url"));
-        print_r($var);
-        $this->render( $request,"main/index.thinkce");
+        $users = ["Afari", "samuel"];
+         return $this->render($request, "main/about", $users);
+    }
+    public function contact($request){
+        echo "Contact us page";
+    }
+    public function home($request){
+        echo "Home Page";
     }
 }

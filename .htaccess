@@ -1,5 +1,0 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine on
-  RewriteRule ^$ /thinkce_manager/public/ [L]
-  RewriteRule (.*) /thinkce_manager/public/$1 [L]
-</IfModule>

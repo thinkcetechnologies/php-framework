@@ -1,6 +1,9 @@
 <?php
-class Views{
-    public function login(){
-        echo "Login";
+class Views extends Template {
+    public function login($request){
+        echo "This Login Page";
+    }
+    public function register($request){
+        echo "This register Page";
     }
 }
