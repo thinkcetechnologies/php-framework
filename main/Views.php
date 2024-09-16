@@ -5,10 +5,10 @@ class Views extends Template {
     }
     public function about($request){
         $users = ["Afari", "samuel"];
-         return $this->render($request, "main/about", $users);
+        return $this->render($request, "main/about", $users);
     }
-    public function contact($request){
-        echo "Contact us page";
+    public function contact($request, $path, $id){
+        echo "Contact us page {$path} {$id}";
     }
     public function home($request){
         echo "Home Page";

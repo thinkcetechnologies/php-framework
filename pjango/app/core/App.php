@@ -28,7 +28,7 @@ class App{
                     $this->params = $url ? array_values($url) : [];
                 }
             } else {
-                if(file_exists( strtolower($url[0])  . "/Views.php")) {
+                if(file_exists(strtolower($url[0])  . "/Views.php")) {
                     $this->app = ucwords($url[0]);
                     unset($url[0]);
                 }
@@ -55,19 +55,26 @@ class App{
     /**
      * @return string[]|bool|string
      */
-    public function parseUrl(){
+    public function parseUrl(): array|bool{
         $urlPatterns = Router::urlPattern();
-        $p = "";
-        $url = explode("/", filter_var(url, FILTER_SANITIZE_URL),);
+        $url = explode("/", filter_var(trim(url), FILTER_SANITIZE_URL),);
+
         foreach ($urlPatterns as $pattern) {
             foreach ($pattern as $path => $method){
-                $path_split = explode("/", $path);
+               $path_split = explode("/", $path);
+               if($path_split[0] === $url[0]){
+                   for($x = 0; $x < count($path_split); $x++){
 
-               if($path == $url[0]){
+                     if((strpos($path_split[$x], "{") !== false) and (strpos($path_split[$x], "}") !== false)){
+                        if(array_key_exists($x, $url)){
+                            $method .= "/". $url[$x];
+                        }else{
+                            die("the required parameter not found");
+                        }
+                     }
+                   }
                    $viewMethod = explode("/", filter_var($method),);
                    return $viewMethod;
-               }elseif ((strpos($path_split[0], "<") !== false) && strpos($path_split[0], ">") !== false){
-
                }
             }
         }

@@ -34,12 +34,6 @@ class Router{
      * @param mixed $name
      */
     public static function path($path, $view, $name = ""): array {
-        $urls = explode("/", $path);
-        foreach ($urls as $url) {
-            if((strpos($url, "{") !== false) && strpos($url, "}") !== false){
-                echo $url . "<br>";
-            }
-        }
         return array(trim($path, "/") => $view);
     }
 }

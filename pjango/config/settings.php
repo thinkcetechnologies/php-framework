@@ -3,7 +3,7 @@ require_once "pjango/app/core/functions/functions.php";
 define("URL", __DIR__);
 
 define('staticfiles', URL .'static/');
-define("url", $_SERVER["REQUEST_URI"]);
+define("url", trim($_SERVER["REQUEST_URI"], "/"));
 
 define("apps", [
     "main",
@@ -11,7 +11,5 @@ define("apps", [
 ]);
 
 $schemas = new Schemas();
-
-//$schemas->makeAuth();
 
 $schemas->migrate();

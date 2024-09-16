@@ -9,7 +9,9 @@ class Schemas{
     public function __construct(){
         $this->_db = DB::getInstance();
     }
-
+    /**
+     * @return void
+     */
     public function migrate(){
         foreach (apps as $app){
             $models = scandir($app . '/models');

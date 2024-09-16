@@ -14,6 +14,9 @@ class  DB {
             die($e->getMessage());
         }
     }
+    /**
+    * @@return DB
+    */
     public static function getInstance(){
         if(!isset(self::$_instance)){
             self::$_instance = new DB();
@@ -50,7 +53,7 @@ class  DB {
      * @param mixed $where
      * @return DB|bool
      */
-    private function action($action, $table, $where = []){
+    private function action($action, $table, $where = []): DB|bool{
         if(count($where) === 3){
             $operators = array('=','>','<','>=','<=');
             $field     =  $where[0];
@@ -160,7 +163,7 @@ class  DB {
      * @param mixed $where
      * @return DB | bool
      */
-    public function get($table, $where){
+    public function get($table, $where): DB|bool{
         return $this->action('SELECT *',$table, $where);
     }
     /**
@@ -169,6 +172,17 @@ class  DB {
      */
     public function fetchAll($table): bool{
         $sql = "SELECT * FROM {$table} ORDER BY id DESC";
+        if($this->query($sql)){
+            return true;
+        }
+        return false;
+    }
+    /**
+     * @param mixed $table
+     * @param mixed $limit
+     */
+    public function getAll($table, $limit = 10): bool{
+        $sql = "SELECT * FROM {$table} ORDER BY id DESC LIMIT = {$limit}";
         if($this->query($sql)){
             return true;
         }
@@ -199,7 +213,7 @@ class  DB {
      * @param mixed $where
      * @return DB | bool
      */
-    public function delete($table, $where){
+    public function delete($table, $where): DB|bool{
         return $this->action('DELETE',$table, $where);
     }
     public function results(){
