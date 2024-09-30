@@ -4,6 +4,6 @@ class Views extends Template {
         echo "This Login Page";
     }
     public function register($request){
-        echo "This register Page";
+        echo "This register Page ggdggd";
     }
 }

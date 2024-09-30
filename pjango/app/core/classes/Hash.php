@@ -1,9 +1,11 @@
 <?php
 class Hash {
-    public static function make($string){
+    public static function make($string): string
+    {
         return password_hash($string, PASSWORD_DEFAULT);
     }
-    public static function unique(){
+    public static function unique(): string
+    {
         return self::make(uniqid());
     }
     public static function salt(){

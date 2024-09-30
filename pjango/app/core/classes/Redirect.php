@@ -1,7 +1,8 @@
 <?php
 
 class Redirect {
-    public static function to($url = null){
+    public static function to($url = null): void
+    {
         if($url){
             if(is_numeric($url)){
                 switch ($url) {

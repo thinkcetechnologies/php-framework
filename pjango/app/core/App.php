@@ -1,8 +1,8 @@
 <?php
 class App{
-    protected $app = "main";
-    protected $method = "index";
-    protected $params = [];
+    protected mixed $app = "main";
+    protected string $method = "index";
+    protected array|bool $params = [];
 
     /**
      * App constructor.
@@ -52,8 +52,9 @@ class App{
         call_user_func_array([$this->app, $this->method], $this->params);
 
     }
+
     /**
-     * @return string[]|bool|string
+     * @return array|bool
      */
     public function parseUrl(): array|bool{
         $urlPatterns = Router::urlPattern();
@@ -64,22 +65,20 @@ class App{
                $path_split = explode("/", $path);
                if($path_split[0] === $url[0]){
                    for($x = 0; $x < count($path_split); $x++){
-
-                     if((strpos($path_split[$x], "{") !== false) and (strpos($path_split[$x], "}") !== false)){
+                     if((str_contains($path_split[$x], "{")) and (str_contains($path_split[$x], "}"))){
                         if(array_key_exists($x, $url)){
                             $method .= "/". $url[$x];
                         }else{
                             die("the required parameter not found");
                         }
+                     }else{
+
                      }
                    }
-                   $viewMethod = explode("/", filter_var($method),);
-                   return $viewMethod;
+                   return explode("/", filter_var($method),);
                }
             }
         }
         die("Path not found");
-
     }
-
 }

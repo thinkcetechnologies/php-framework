@@ -3,7 +3,7 @@ class Views extends Template {
     public function index($request){
         echo "Yes ThinkCE The Genius";
     }
-    public function about($request){
+    public function about($request): mixed{
         $users = ["Afari", "samuel"];
         return $this->render($request, "main/about", $users);
     }

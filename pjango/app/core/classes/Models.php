@@ -21,7 +21,8 @@ abstract class Models{
      * @param $length
      * @return $this
      */
-    public function varchar($length){
+    public function varchar($length): static
+    {
         $this->_string .= "VARCHAR({$length}) ";
         return $this;
     }
@@ -29,7 +30,8 @@ abstract class Models{
     /**
      * @return $this
      */
-    public function text(){
+    public function text(): static
+    {
         $this->_string .= "TEXT ";
         return $this;
     }
@@ -37,7 +39,8 @@ abstract class Models{
     /**
      * @return $this
      */
-    public function unique(){
+    public function unique(): static
+    {
         $this->_string .= "UNIQUE ";
         return $this;
     }
@@ -45,7 +48,8 @@ abstract class Models{
     /**
      * @return $this
      */
-    public function datetime(){
+    public function datetime(): static
+    {
         $this->_string .= "DATETIME ";
         return $this;
     }
@@ -53,7 +57,8 @@ abstract class Models{
     /**
      * @return $this
      */
-    public function timestamp(){
+    public function timestamp(): static
+    {
         $this->_string .= "TIMESTAMP ";
         return $this;
     }
@@ -61,7 +66,8 @@ abstract class Models{
     /**
      * @return mixed
      */
-    public function set(){
+    public function set(): mixed
+    {
         $fieldsAttr = $this->_string;
         $this->_string = "";
         return $fieldsAttr;
@@ -78,7 +84,7 @@ abstract class Models{
      * @param array $fields
      * @return array
      */
-    public function data($fields = []) : array {
+    public function data(array $fields = []) : array {
         return $fields;
     }
 
@@ -86,7 +92,8 @@ abstract class Models{
      * @param $table
      * @param $fields
      */
-    public function insert($table, $fields){
+    public function insert($table, $fields): void
+    {
         $this->db()->insert($table, $fields);
     }
 }

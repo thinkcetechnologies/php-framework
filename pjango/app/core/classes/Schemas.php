@@ -1,9 +1,7 @@
 <?php
 class Schemas{
-    private  $_db,
-             $_error,
-             $_is_created = false,
-             $_data;
+    private ?DB $_db;
+    private bool $_is_created = false;
 
 
     public function __construct(){
@@ -12,7 +10,8 @@ class Schemas{
     /**
      * @return void
      */
-    public function migrate(){
+    public function migrate(): void
+    {
         foreach (apps as $app){
             $models = scandir($app . '/models');
             $hideName = ['.','..','.DS_Store'];

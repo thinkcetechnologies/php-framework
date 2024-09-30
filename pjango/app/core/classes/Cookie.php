@@ -4,14 +4,15 @@ class Cookie {
      * @param mixed $name
      * @return bool
      */
-    public static function exists($name): bool{
-        return (isset($_COOKIE[$name])) ? true : false;
+    public static function exists(mixed $name): bool{
+        return isset($_COOKIE[$name]);
     }
     /**
      * @param mixed $name
      * @return string
      */
-    public static function get($name){
+    public static function get(mixed $name): string
+    {
         return $_COOKIE[$name];
     }
     /**
@@ -20,7 +21,7 @@ class Cookie {
      * @param mixed $expiry
      * @return bool
      */
-    public static function put($name, $value, $expiry): bool {
+    public static function put(mixed $name, mixed $value, mixed $expiry): bool {
         if(setcookie($name, $value, time() + $expiry, '/')){
             return true;
         }
@@ -30,7 +31,7 @@ class Cookie {
      * @param mixed $name
      * @return void
      */
-    public static function delete($name): void{
+    public static function delete(mixed $name): void{
         self::put($name,'', time() - 1);
     }
 }

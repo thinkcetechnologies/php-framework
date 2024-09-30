@@ -1,17 +1,18 @@
 <?php
 
 class Validation{
-    private $_passed = false,
-            $_errors = [],
-            $_db = null,
-            $_allowed = ['image/png', 'image/jpg', 'image/jpeg', 'image/gif'];
+    private ?DB $_db = null;
+    private array $_allowed = ['image/png', 'image/jpg', 'image/jpeg', 'image/gif'];
+    private array $_errors = [];
+    private bool $_passed = false;
 
 
     public function __construct(){
         $this->_db = DB::getInstance();
     }
 
-    public function check($source, $items = []){
+    public function check($source, $items = []): static
+    {
         foreach ($items as $item => $rules) {
             foreach ($rules as $rule => $rule_value) {
                 $value = trim($source[$item]);
@@ -95,15 +96,18 @@ class Validation{
         }
     }
 
-    private function addError($error){
+    private function addError($error): void
+    {
         $this->_errors[] = $error;
     }
 
-    public function errors(){
+    public function errors(): array
+    {
         return $this->_errors;
     }
 
-    public function passed(){
+    public function passed(): bool
+    {
         return $this->_passed;
     }
 }

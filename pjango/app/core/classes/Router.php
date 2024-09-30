@@ -3,9 +3,11 @@ class Router{
     /**
      * @param mixed $urls
      */
-    public static $patterns = [];
+    public static array $patterns = [];
 
-    public static function urlPattern(){
+    public static function urlPattern(): array
+    {
+
         foreach (apps as $app) {
             include_once $app . "/urls.php";
             foreach ($urlpatterns as $urlpattern) {
@@ -27,13 +29,14 @@ class Router{
             echo "</pre>";
         }
     }
+
     /**
-     * @return array
      * @param mixed $path
      * @param mixed $view
-     * @param mixed $name
+     * @param string|null $name
+     * @return array
      */
-    public static function path($path, $view, $name = ""): array {
+    public static function path(mixed $path, mixed $view, null|string $name = ""): array {
         return array(trim($path, "/") => $view);
     }
 }

@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5f47fa7b-60bb-4428-81d1-69cbd0d9bdd5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/Views.php" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env.json" beforeDir="false" afterPath="$PROJECT_DIR$/env.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/Views.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/Views.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pjango/app/core/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Cookie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Errors.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Errors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Hash.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Hash.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Input.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Models.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Models.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Redirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Redirect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Schemas.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Schemas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Token.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Token.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pjango/app/core/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/init.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -183,6 +198,10 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="251" />
@@ -190,6 +209,7 @@
     <option name="width" value="1420" />
     <option name="height" value="872" />
   </component>
+  <component name="ProjectId" id="2mQ40E2KsGnmcKOA1gosNiValIJ" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -275,15 +295,27 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/xampp/php/php.exe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\web\php\mvc\controllers" />
@@ -299,18 +331,6 @@
       <recent name="D:\Projects\web\php\mvc" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="SERVER" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
       <method v="2" />
@@ -319,6 +339,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -355,6 +376,12 @@
       <workItem from="1724211144802" duration="682000" />
       <workItem from="1724420124499" duration="1747000" />
       <workItem from="1725883358021" duration="77000" />
+      <workItem from="1726995243758" duration="2305000" />
+      <workItem from="1726973966184" duration="2199000" />
+      <workItem from="1727000245146" duration="1025000" />
+      <workItem from="1727049134409" duration="684000" />
+      <workItem from="1726975113574" duration="1520000" />
+      <workItem from="1727231199223" duration="310000" />
     </task>
     <servers />
   </component>
@@ -386,7 +413,11 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/settings.php" />
