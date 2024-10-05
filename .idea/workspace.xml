@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f47fa7b-60bb-4428-81d1-69cbd0d9bdd5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/Views.php" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/Views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env.json" beforeDir="false" afterPath="$PROJECT_DIR$/env.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/Views.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/Views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Cookie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Hash.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Hash.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Input.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Input.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Models.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Models.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Redirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Redirect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Schemas.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Schemas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Token.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Token.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/classes/Validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/classes/Validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pjango/app/core/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/pjango/app/core/init.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,23 +281,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/xampp/php/php.exe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/php/php.exe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\web\php\mvc\controllers" />
@@ -382,6 +364,7 @@
       <workItem from="1727049134409" duration="684000" />
       <workItem from="1726975113574" duration="1520000" />
       <workItem from="1727231199223" duration="310000" />
+      <workItem from="1727658689547" duration="171000" />
     </task>
     <servers />
   </component>
